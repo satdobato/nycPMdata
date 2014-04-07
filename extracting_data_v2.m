@@ -168,8 +168,8 @@ stdD = nanstd(dataM')';
 
 iwantst1 = find(saveData(:,8)==1 );
 
-saveDatabase = [saveData(iwantst1,1:end-2) meanD stdD];
-saveRawDatabase = [saveData(iwantst1,1:end-2) dataM];
+saveDatabase = [saveData(iwantst1,1:end-4) meanD stdD];
+saveRawDatabase = [saveData(iwantst1,1:end-4) dataM];
 
 'The saveDatabase has the following arrangement:'
 'YYYY MM DD HH Lat Lon PMmean PMstd'
